@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:handy_gadgets_app/features/unit_convertor/screen.dart';
 
 import 'features/home/screen.dart';
 
@@ -35,6 +36,9 @@ class HandyGadgets extends StatelessWidget {
       onGenerateRoute: (settings) {
         Widget page;
         switch (settings.name) {
+          case RouteNames.unitConverter:
+            page = const UnitConverterPage();
+            break;
           default:
             page = const HomePage();
         }
@@ -50,4 +54,8 @@ class HandyGadgets extends StatelessWidget {
       },
     );
   }
+}
+
+class RouteNames {
+  static const String unitConverter = "unit-converter";
 }
