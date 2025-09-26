@@ -19,7 +19,7 @@ class TimeUnits implements UnitsAndFactors {
 
   @override
   Map<String, dynamic> makeUnitsAndFactors() {
-    var units = [
+    final units = [
       second,
       millisecond,
       microsecond,
@@ -34,7 +34,7 @@ class TimeUnits implements UnitsAndFactors {
       century,
       millennium,
     ];
-    var unitToFactor = {
+    final unitToFactors = {
       second: 1.0,
       millisecond: 0.001,
       microsecond: 1e-6,
@@ -50,7 +50,7 @@ class TimeUnits implements UnitsAndFactors {
       millennium: 3.1556926e10,
     };
 
-    return {'units': units, 'unitToFactor': unitToFactor};
+    return {'units': units, 'unitToFactors': unitToFactors};
   }
 }
 
@@ -78,7 +78,7 @@ class LengthUnits implements UnitsAndFactors {
 
   @override
   Map<String, dynamic> makeUnitsAndFactors() {
-    var units = [
+    final units = [
       meter,
       kilometer,
       centimeter,
@@ -100,7 +100,7 @@ class LengthUnits implements UnitsAndFactors {
       astronomicalUnit,
       planckLength,
     ];
-    var unitToFactor = {
+    final unitToFactors = {
       LengthUnits.meter: 1.0,
       LengthUnits.kilometer: 1000.0,
       LengthUnits.centimeter: 0.01,
@@ -123,7 +123,7 @@ class LengthUnits implements UnitsAndFactors {
       LengthUnits.planckLength: 1.616255e-35,
     };
 
-    return {'units': units, 'unitToFactor': unitToFactor};
+    return {'units': units, 'unitToFactors': unitToFactors};
   }
 }
 
@@ -151,7 +151,7 @@ class WeightUnits implements UnitsAndFactors {
 
   @override
   Map<String, dynamic> makeUnitsAndFactors() {
-    var units = [
+    final units = [
       kilogram,
       gram,
       milligram,
@@ -173,7 +173,7 @@ class WeightUnits implements UnitsAndFactors {
       planckMass,
       troyOunce,
     ];
-    var unitToFactor = {
+    final unitToFactors = {
       kilogram: 1.0,
       gram: 0.001,
       milligram: 1e-6,
@@ -196,6 +196,6 @@ class WeightUnits implements UnitsAndFactors {
       troyOunce: 0.0311034768,
     };
 
-    return {'units': units, 'unitToFactor': unitToFactor};
+    return {'units': units, 'unitToFactors': unitToFactors};
   }
 }

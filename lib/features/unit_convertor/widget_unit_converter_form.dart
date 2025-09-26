@@ -11,32 +11,37 @@ class UnitConverterForm extends StatefulWidget {
 }
 
 class _UnitConverterFormState extends State<UnitConverterForm> {
+  final fromController = TextEditingController();
+  final toController = TextEditingController();
   late List<String> units;
-  late Map<String, double> unitToFactor;
+  late Map<String, double> unitToFactors;
+
+  String fromUnit = 'Meter';
+  String toUnit = 'Kilometer';
+  double fromValue = 0;
+  double toValue = 0;
 
   @override
   void initState() {
     super.initState();
     final result = makeUnitsAndFactors(widget.type);
     units = result['units'];
-    unitToFactor = result['unitToFactor'];
+    unitToFactors = result['unitToFactors'];
     fromUnit = units.first;
     toUnit = units.length > 1 ? units[1] : units.first;
   }
 
   @override
-  void didUpdateWidget(covariant UnitConverterForm oldWidget) {
+  void didUpdateWidget(UnitConverterForm oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.type != widget.type) {
       final result = makeUnitsAndFactors(widget.type);
-      setState(() {
-        units = result['units'];
-        unitToFactor = result['unitToFactor'];
-        fromUnit = units.first;
-        toUnit = units.length > 1 ? units[1] : units.first;
-        fromController.clear();
-        toController.clear();
-      });
+      units = result['units'];
+      unitToFactors = result['unitToFactors'];
+      fromUnit = units.first;
+      toUnit = units.length > 1 ? units[1] : units.first;
+      fromController.clear();
+      toController.clear();
     }
   }
 
@@ -51,24 +56,16 @@ class _UnitConverterFormState extends State<UnitConverterForm> {
       result = WeightUnits().makeUnitsAndFactors();
     }
 
-    return {'units': result['units'], 'unitToFactor': result['unitToFactor']};
+    return {'units': result['units'], 'unitToFactors': result['unitToFactors']};
   }
 
   double convertUnit(double value, String from, String to) {
-    if (!unitToFactor.containsKey(from) || !unitToFactor.containsKey(to)) {
+    if (!unitToFactors.containsKey(from) || !unitToFactors.containsKey(to)) {
       return value;
     }
-    double valueInBase = value * unitToFactor[from]!;
-    return valueInBase / unitToFactor[to]!;
+    double valueInBase = value * unitToFactors[from]!;
+    return valueInBase / unitToFactors[to]!;
   }
-
-  String fromUnit = 'Meter';
-  String toUnit = 'Kilometer';
-  double fromValue = 0;
-  double toValue = 0;
-
-  final fromController = TextEditingController();
-  final toController = TextEditingController();
 
   void updateToValue() {
     final value = double.tryParse(fromController.text) ?? 0;
