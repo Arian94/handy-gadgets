@@ -1,5 +1,5 @@
 abstract class UnitsAndFactors {
-  Map<String, dynamic> makeUnitsAndFactors() => {"dasd": "dasdas"};
+  Map<String, dynamic> makeUnitsAndFactors();
 }
 
 class TimeUnits implements UnitsAndFactors {

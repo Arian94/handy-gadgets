@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:handy_gadgets_app/features/unit_convertor/screen.dart';
 
-import 'features/home/screen.dart';
+import 'features/unit_convertor/page.dart';
+import 'features/home/page.dart';
 
 void main() {
   runApp(const HandyGadgets());
