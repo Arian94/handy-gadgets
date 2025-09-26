@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'features/home/screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const HandyGadgets());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HandyGadgets extends StatelessWidget {
+  const HandyGadgets({super.key});
 
   // This widget is the root of your application.
   @override
@@ -32,7 +32,22 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
       ),
-      home: const HomePage(title: 'Handy Gadgets App'),
+      onGenerateRoute: (settings) {
+        Widget page;
+        switch (settings.name) {
+          default:
+            page = const HomePage();
+        }
+        return MaterialPageRoute(
+          builder: (context) => Scaffold(
+            appBar: AppBar(title: Text('Handy Gadgets'), centerTitle: true),
+            body: Padding(
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+              child: page,
+            ),
+          ),
+        );
+      },
     );
   }
 }
