@@ -26,7 +26,7 @@ class HomePage extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            return;
+            Navigator.pushNamed(context, RouteNames.currencyConverter);
           },
           style: ElevatedButton.styleFrom(
             shape: CircleBorder(

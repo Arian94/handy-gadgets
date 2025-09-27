@@ -40,6 +40,10 @@ class HandyGadgets extends StatelessWidget {
           case RouteNames.unitConverter:
             page = const UnitConverterPage();
             break;
+          case RouteNames.currencyConverter:
+            page = const CurrencyConverterPage();
+            break;
+
           default:
             page = const HomePage();
         }
@@ -59,4 +63,5 @@ class HandyGadgets extends StatelessWidget {
 
 class RouteNames {
   static const String unitConverter = "unit-converter";
+  static const String currencyConverter = "currency-converter";
 }
