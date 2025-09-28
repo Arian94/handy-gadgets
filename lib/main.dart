@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import 'features/currency_converter/page.dart';
 import 'features/unit_convertor/page.dart';
 import 'features/home/page.dart';
 
 void main() {
+  SystemChrome.setEnabledSystemUIMode(
+    SystemUiMode.immersiveSticky,
+    overlays: [SystemUiOverlay.top],
+  );
   runApp(const HandyGadgets());
 }
 
