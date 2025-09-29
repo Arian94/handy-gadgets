@@ -52,7 +52,7 @@ class HandyGadgets extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blueAccent),
       ),
       onGenerateRoute: (settings) {
         Widget page;
@@ -85,7 +85,16 @@ class HandyGadgets extends StatelessWidget {
         }
         return MaterialPageRoute(
           builder: (context) => Scaffold(
-            appBar: AppBar(title: Text('Handy Gadgets'), centerTitle: true),
+            appBar: AppBar(
+              title: Text(
+                'Handy Gadgets',
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.inversePrimary,
+                ),
+              ),
+              centerTitle: true,
+              backgroundColor: Theme.of(context).primaryColor,
+            ),
             body: Padding(
               padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
               child: page,

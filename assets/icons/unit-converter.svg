@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [ <!ENTITY
+	ns_svg "http://www.w3.org/2000/svg">
+<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+	]>
+	<svg version="1.1" id="Square" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="455.747" height="234.569"
+		viewBox="0 0 455.747 234.569" overflow="visible" enable-background="new 0 0 455.747 234.569"
+		xml:space="preserve">
+		<defs>
+			<linearGradient id="gradient">
+				<stop offset="0%" stop-color="rgba(33, 150, 243, 1)" />
+				<stop offset="50%" stop-color="rgba(66, 165, 245, 1))" stop-opacity=".5" />
+				<stop offset="100%" stop-color="rgba(144, 202, 249, 1)" />
+			</linearGradient>
+		</defs>
+		<g>
+			<g>
+				<path id="outline_2_" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" d="M227.458,1.5L2.035,226.922
+			c0,0,4.896,5.807,16.729,6.141c11.833,0.332,26.833-12.002,36.333-12.168s26.088,6.281,26.088,6.281L227.71,80.651h0.324
+			L374.56,227.176c0,0,16.588-6.447,26.088-6.281s24.5,12.5,36.334,12.168c11.833-0.334,16.729-6.141,16.729-6.141L228.288,1.5
+			H227.458z" />
+				<path fill="none" stroke="url(#gradient)" stroke-width="5" stroke-linecap="round"
+					d="M37.143,221.94
+			c6.376-3.059,12.397-5.947,17.867-6.043c7.935-0.139,19.371,3.523,24.9,5.482c4.385-4.385,145.729-145.728,145.729-145.728h4.467
+			c0,0,141.344,141.343,145.729,145.728c5.529-1.959,16.966-5.621,24.901-5.482c5.469,0.096,11.491,2.984,17.866,6.043
+			c6.426,3.082,13.07,6.27,18.239,6.125c4.029-0.113,6.965-0.957,9.064-1.877c-8.103-8.102-212.08-212.08-218.033-218.032
+			c-5.953,5.952-209.93,209.93-218.033,218.032c2.1,0.92,5.036,1.764,9.065,1.877C24.074,228.209,30.718,225.022,37.143,221.94z" />
+				<g id="left_swirls_and_ticks">
+					<g id="Ticks">
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="409.793"
+							y1="191.252" x2="401.815" y2="199.231" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="307.793"
+							y1="89.252" x2="299.815" y2="97.23" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="290.793"
+							y1="72.252" x2="277.733" y2="85.313" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="256.793"
+							y1="38.252" x2="243.733" y2="51.313" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="273.793"
+							y1="55.252" x2="265.815" y2="63.23" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="239.793"
+							y1="21.252" x2="231.815" y2="29.23" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="392.793"
+							y1="174.252" x2="379.733" y2="187.313" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="426.793"
+							y1="208.252" x2="418.815" y2="216.231" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="375.793"
+							y1="157.252" x2="367.815" y2="165.231" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="375.793"
+							y1="157.252" x2="367.815" y2="165.231" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="358.793"
+							y1="140.252" x2="345.733" y2="153.313" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="324.793"
+							y1="106.252" x2="311.733" y2="119.313" />
+
+						<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="341.793"
+							y1="123.252" x2="333.815" y2="131.231" />
+					</g>
+				</g>
+			</g>
+			<g id="left_swirls_and_ticks_1_">
+				<g id="Ticks_1_">
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="45.815" y1="191.252"
+						x2="53.793" y2="199.231" />
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="147.815" y1="89.252"
+						x2="155.793" y2="97.23" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="164.815" y1="72.252"
+						x2="177.875" y2="85.313" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="198.815" y1="38.252"
+						x2="211.875" y2="51.313" />
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="181.815" y1="55.252"
+						x2="189.793" y2="63.23" />
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="215.815" y1="21.252"
+						x2="223.793" y2="29.23" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="62.815" y1="174.252"
+						x2="75.875" y2="187.313" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="28.815" y1="208.252"
+						x2="36.793" y2="216.231" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="79.815" y1="157.252"
+						x2="87.793" y2="165.231" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="79.815" y1="157.252"
+						x2="87.793" y2="165.231" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="96.815" y1="140.252"
+						x2="109.875" y2="153.313" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="130.815" y1="106.252"
+						x2="143.875" y2="119.313" />
+
+					<line fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" x1="113.815" y1="123.252"
+						x2="121.793" y2="131.231" />
+				</g>
+			</g>
+		</g>
+	</svg>

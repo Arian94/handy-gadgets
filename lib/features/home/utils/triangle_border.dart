@@ -40,6 +40,7 @@ class TriangleBorder extends OutlinedBorder {
 
   @override
   ShapeBorder scale(double t) => TriangleBorder(side: side.scale(t));
+
   @override
   OutlinedBorder copyWith({BorderSide? side}) {
     return TriangleBorder(side: side ?? this.side);
@@ -58,6 +59,7 @@ class TriangleBorder extends OutlinedBorder {
       width,
       height,
     );
+
     return Path()
       ..moveTo(innerRect.left + innerRect.width / 2, innerRect.top)
       ..lineTo(innerRect.right, innerRect.bottom)

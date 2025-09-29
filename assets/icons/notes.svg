@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="30 10 200 236" enable-background="new 0 0 230 256" xml:space="preserve">
+    <defs>
+        <linearGradient id="gradient-inside" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="rgba(33, 150, 243, 1)" />
+            <stop offset="25%" stop-color="#5292db" />
+            <stop offset="50%" stop-color="#e498ca" stop-opacity=".8" />
+            <stop offset="100%" stop-color="#e056a2" />
+        </linearGradient>
+
+        <linearGradient id="gradient-border" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="rgba(33, 150, 243, 1)" />
+            <stop offset="25%" stop-color="#3d85d6" />
+            <stop offset="50%" stop-color="#e977c1" stop-opacity=".8" />
+            <stop offset="100%" stop-color="#db298b" />
+        </linearGradient>
+    </defs>
+
+    <g>
+        <g>
+            <g>
+                <rect x="47" y="17" width="177" height="222" fill="url(#gradient-inside)" />
+                <path fill="url(#gradient-border)"
+                    d="M40,20.6v10.6h-7.4h-7.4v7.4V46h7.4H40v10.4v10.4h-7.4h-7.4v7.6v7.6h7.4H40v10.4v10.4h-7.4h-7.4v7.4v7.4h7.4H40V128v10.6h-7.4h-7.4v7.4v7.4h7.4H40V164v10.6h-7.4h-7.4v7.4v7.4h7.4H40v10.4V210h-7.4h-7.4v7.4v7.4h7.4H40v10.6V246h95.4h95.4V128V10h-95.4H40V20.6z M223.4,128v110.6h-88h-88v-6.9v-6.9h8.1h8.1v-7.4V210h-8.1h-8.1v-10.4v-10.4h8.1h8.1v-7.4v-7.4h-8.1h-8.1V164v-10.6h8.1h8.1V146v-7.4h-8.1h-8.1V128v-10.6h8.1h8.1V110v-7.4h-8.1h-8.1V92.3V81.9h8.1h8.1v-7.6v-7.6h-8.1h-8.1V56.3V46h8.1h8.1v-7.4v-7.4h-8.1h-8.1v-6.9v-6.9h88h88V128z" />
+            </g>
+        </g>
+    </g>
+</svg>
