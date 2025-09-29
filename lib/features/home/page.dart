@@ -103,7 +103,7 @@ class HomePage extends StatelessWidget {
                     top: 60,
                     bottom: 60,
                     right: 35,
-                    left: 45,
+                    left: 40,
                   ),
                   backgroundColor: Colors.transparent,
                 ),
