@@ -19,8 +19,6 @@ interface class Note {
   @HiveField(3)
   int creationDate;
 
-  external factory Note.of(Iterable<dynamic> elements, {bool growable = true});
-
   static List<Note> toList(Iterable<dynamic> iterable) {
     // eg: {title: , content: [{insert: qqq}, {insert:... }
     // map.entries.
