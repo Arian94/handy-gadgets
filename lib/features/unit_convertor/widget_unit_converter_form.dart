@@ -100,12 +100,12 @@ class _UnitConverterFormState extends State<UnitConverterForm> {
             Flexible(
               flex: 0,
               child: Container(
-                constraints: BoxConstraints.tight(Size(180, 48)),
+                constraints: BoxConstraints.tight(Size(180, 56)),
                 alignment: Alignment.bottomCenter,
                 child: InputDecorator(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                      horizontal: 12,
+                      horizontal: 6,
                       vertical: 16,
                     ),
                     isDense: true,
@@ -129,7 +129,7 @@ class _UnitConverterFormState extends State<UnitConverterForm> {
                 ),
               ),
             ),
-            SizedBox(width: 8),
+            SizedBox(width: 16),
             Expanded(
               child: TextField(
                 controller: fromController,
@@ -148,7 +148,8 @@ class _UnitConverterFormState extends State<UnitConverterForm> {
               border: Border.all(color: Colors.grey, width: 2),
             ),
             child: IconButton(
-              icon: Icon(Icons.swap_horiz),
+              icon: Icon(Icons.swap_vert),
+              style: TextButton.styleFrom(padding: EdgeInsets.only(left: 1)),
               onPressed: swapUnits,
             ),
           ),
@@ -158,12 +159,12 @@ class _UnitConverterFormState extends State<UnitConverterForm> {
             Flexible(
               flex: 0,
               child: Container(
-                constraints: BoxConstraints.tight(Size(180, 48)),
+                constraints: BoxConstraints.tight(Size(180, 56)),
                 alignment: Alignment.bottomCenter,
                 child: InputDecorator(
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                      horizontal: 12,
+                      horizontal: 6,
                       vertical: 16,
                     ),
                     isDense: true,
@@ -187,7 +188,7 @@ class _UnitConverterFormState extends State<UnitConverterForm> {
                 ),
               ),
             ),
-            SizedBox(width: 8),
+            SizedBox(width: 16),
             Expanded(
               child: TextField(
                 controller: toController,

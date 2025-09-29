@@ -40,12 +40,10 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
             ],
           ),
         ),
-        Spacer(),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
           child: UnitConverterForm(type: tabTypes[activeTabIndex]),
         ),
-        Spacer(),
       ],
     );
   }
