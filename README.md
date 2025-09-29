@@ -1,6 +1,6 @@
-# flutter_application_1
+# Handy Gadgets
 
-A new Flutter project.
+A new Flutter project in which simple daily features are gathered to reduce switching between different apps.
 
 ## Getting Started
 
