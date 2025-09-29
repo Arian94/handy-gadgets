@@ -4,7 +4,7 @@ import 'package:handy_gadgets_app/main.dart';
 
 import 'utils/circular_flow_delegate.dart';
 import 'utils/triangle_border.dart';
-import 'utils/trianlge_shape.dart';
+import 'utils/triangle_shape.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -41,106 +41,82 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        Stack(
-          alignment: AlignmentGeometry.center,
-          children: [
-            Container(
-              height: 150,
-              // width: 120,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.indigo.shade100.withValues(
-                      alpha: .3,
-                    ), // Shadow color and opacity
-                    spreadRadius: 2, // Extends the shadow outwards
-                    blurRadius: 10, // Softens the shadow edges
-                    offset: const Offset(
-                      0,
-                      8,
-                    ), // Moves the shadow down and right
-                  ),
-                ],
+        Container(
+          height: 155,
+          width: 155,
+          decoration: BoxDecoration(
+            color: Colors.indigo.shade300.withValues(alpha: .1),
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                blurStyle: BlurStyle.outer,
+                color: Colors.indigo.shade300.withValues(
+                  alpha: .3,
+                ), // Shadow color and opacity
+                spreadRadius: 1, // Extends the shadow outwards
+                blurRadius: 15, // Softens the shadow edges
               ),
-              child: SvgPicture.asset('assets/icons/currency-converter.svg'),
+            ],
+          ),
+          child: TextButton(
+            style: TextButton.styleFrom(padding: EdgeInsets.only(bottom: 12)),
+            onPressed: () {
+              Navigator.pushNamed(context, RouteNames.currencyConverter);
+            },
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SvgPicture.asset('assets/icons/currency-converter.svg'),
+                Text("Currency Converter", style: TextStyle(fontSize: 10)),
+              ],
             ),
-            TextButton(
-              onPressed: () {
-                Navigator.pushNamed(context, RouteNames.currencyConverter);
-              },
-              style: TextButton.styleFrom(
-                shape: CircleBorder(
-                  side: BorderSide(width: 4, color: Colors.transparent),
-                ),
-                padding: EdgeInsets.all(80),
-                backgroundColor: Colors.transparent,
-              ),
-              child: Container(
-                padding: EdgeInsets.only(top: 10),
-                child: const Text(""),
-              ),
-            ),
-            Positioned(
-              bottom: -2,
-              child: Text(
-                "Currency Converter",
-                style: TextStyle(
-                  color: Theme.of(context).colorScheme.primary,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-          ],
+          ),
         ),
-        Stack(
-          alignment: AlignmentGeometry.center,
-          children: [
-            Container(
-              height: 140,
-              width: 120,
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.indigo.withValues(
-                      alpha: 0.4,
-                    ), // Shadow color and opacity
-                    spreadRadius: 2, // Extends the shadow outwards
-                    blurRadius: 10, // Softens the shadow edges
-                    offset: const Offset(
-                      0,
-                      8,
-                    ), // Moves the shadow down and right
+        Container(
+          height: 140,
+          width: 120,
+          decoration: BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.indigo.withValues(
+                  alpha: 0.4,
+                ), // Shadow color and opacity
+                spreadRadius: 2, // Extends the shadow outwards
+                blurRadius: 10, // Softens the shadow edges
+                offset: const Offset(0, 8), // Moves the shadow down and right
+              ),
+            ],
+          ),
+          child: Stack(
+            alignment: AlignmentGeometry.center,
+            children: [
+              SvgPicture.asset('assets/icons/notes.svg'),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, RouteNames.notesList);
+                },
+                style: TextButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.transparent),
                   ),
-                ],
-              ),
-              child: SvgPicture.asset('assets/icons/notes.svg'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pushNamed(context, RouteNames.notesList);
-              },
-              style: TextButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  side: BorderSide(color: Colors.transparent),
+                  padding: EdgeInsets.only(
+                    top: 60,
+                    bottom: 60,
+                    right: 35,
+                    left: 45,
+                  ),
+                  backgroundColor: Colors.transparent,
                 ),
-                padding: EdgeInsets.only(
-                  top: 60,
-                  bottom: 60,
-                  right: 35,
-                  left: 45,
-                ),
-                backgroundColor: Colors.transparent,
-              ),
-              child: Text(
-                "Notes",
-                style: TextStyle(
-                  fontSize: 16,
-                  color: Theme.of(context).colorScheme.primaryContainer,
+                child: Text(
+                  "Notes",
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Theme.of(context).colorScheme.primaryContainer,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ],
     );

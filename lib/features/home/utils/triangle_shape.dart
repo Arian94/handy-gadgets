@@ -38,6 +38,17 @@ class TrianglePainter extends CustomPainter {
       // Optional: smooth the corners
       ..strokeJoin = StrokeJoin.round;
 
+    // Arguments:
+    // - path: The shape to shadow.
+    // - color: The color of the shadow.
+    // - elevation: The "height" of the shadow (determines blur size).
+    // - transparentOccluder: Must be true if the shape itself has any transparency.
+    canvas.drawShadow(
+      path,
+      Colors.indigo.shade300.withValues(alpha: .8),
+      10.0,
+      true,
+    );
     // 4. Draw the path with the gradient stroke
     canvas.drawPath(path, paint);
   }
