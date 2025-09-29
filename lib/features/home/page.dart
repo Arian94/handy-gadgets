@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            return;
+            Navigator.pushNamed(context, RouteNames.notesList);
           },
           style: ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(
