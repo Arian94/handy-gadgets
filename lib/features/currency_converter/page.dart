@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screen_converter_tab.dart';
+import 'screen_converter_tab_content.dart';
 import 'notifier_unit_change.dart';
 import 'provider_unit_change.dart';
 
@@ -13,12 +13,12 @@ class CurrencyConverterPage extends StatefulWidget {
 
 class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
   int activeTabIndex = 0;
-  static const tabTypes = ['converter & ratio plot'];
+  static const tabNames = ['converter & ratio plot'];
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: tabTypes.length,
+      length: tabNames.length,
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -26,14 +26,14 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
             indicatorColor: Colors.blue,
             labelColor: Colors.blue,
             unselectedLabelColor: Colors.grey,
-            tabs: [Tab(text: tabTypes[0].toUpperCase())],
+            tabs: [Tab(text: tabNames[0].toUpperCase())],
           ),
         ),
         body: TabBarView(
           children: [
             UnitChangeProvider(
               unitChangeNotifier: UnitChangeNotifier(),
-              child: const ConverterTabScreen(),
+              child: const ConverterTabContentScreen(),
             ),
           ],
         ),

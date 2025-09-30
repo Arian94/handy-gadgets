@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:handy_gadgets_app/features/unit_convertor/utils/units.dart';
 import 'provider_unit_change.dart';
 import 'utils/units.dart';
 
@@ -14,7 +15,7 @@ class _CurrencyConverterFormState extends State<CurrencyConverterForm> {
   final fromController = TextEditingController();
   final toController = TextEditingController();
 
-  List<String> units = [];
+  UnitList units = [];
   Map<String, double> unitToRates = {};
   String date = '';
   String fromUnit = '';
