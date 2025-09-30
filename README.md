@@ -2,31 +2,48 @@
 
 A new Flutter project in which simple daily features are gathered to reduce switching between different apps.
 
+##### Important libraries used:
+
+- Flutter
+- Dart
+- Hive (NoSQL)
+- Flutter Quil
+- FL Chart
+
+##### Important features of this app:
+
+- Provider
+- Persisting data using NoSQL database
+- Async HTTP calls and sending Abort signals using `async` library
+- A layout (Flow Layout) for the app
+- Canvas
+- Depicting charts
+
+
 ## Home
 In this page, all widgets can be seen and selected to be used:
 
-![Home Page](/docs/home.png)
+[<img src="/docs/home.png" width="450"/>](/docs/home.png)
 
 ## Unit Converter
 This is where most units are gathered to convert any length, time, etc. units to another unit:
 
-![Unit Converter](/docs/unit_converter.png)
+[<img src="/docs/unit_converter.png" width="450"/>](/docs/unit_converter.png)
 
 ## Currency Converter
 Same as the Unit Converter but with a difference where the units fetched from [Frankfurter API](https://frankfurter.dev/) asynchronously:
 
-![Currency Converter](/docs/currency_converter.png)
+[<img src="/docs/currency_converter.png" width="450"/>](/docs/currency_converter.png)
 
 ## Notes
 A place to write notes and save them for further usage:
 
-![Notes](/docs/notes.png)
+[<img src="/docs/notes_list.png" width="450"/>](/docs/notes_list.png)
 
 ### Note Editor
 The editor can be seen here. It has two sections, one for the title of the note, the other for its content:
 
-![Note Editor](/docs/note_editor.png)
-
+[<img src="/docs/note_editor.png" width="450"/>](/docs/note_editor.png)
 
 ## Getting Started
 
