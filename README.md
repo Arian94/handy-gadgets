@@ -7,7 +7,7 @@ A new Flutter project in which simple daily features are gathered to reduce swit
 - Flutter
 - Dart
 - Hive (NoSQL)
-- Flutter Quil
+- Flutter Quill
 - FL Chart
 
 ##### Important features of this app:
