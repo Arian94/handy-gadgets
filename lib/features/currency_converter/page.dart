@@ -22,7 +22,7 @@ class _CurrencyConverterPageState extends State<CurrencyConverterPage> {
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
-          bottom: TabBar(
+          title: TabBar(
             indicatorColor: Colors.blue,
             labelColor: Colors.blue,
             unselectedLabelColor: Colors.grey,
