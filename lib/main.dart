@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 
+import 'core/routes/route_names.dart';
 import 'features/notes/editor/page.dart';
 import 'features/notes/list/page.dart';
 import 'features/currency_converter/page.dart';
@@ -104,11 +105,4 @@ class HandyGadgets extends StatelessWidget {
       },
     );
   }
-}
-
-class RouteNames {
-  static const String unitConverter = "unit-converter";
-  static const String currencyConverter = "currency-converter";
-  static const String notesList = "notes/list";
-  static const String notesEditor = "notes/editor";
 }

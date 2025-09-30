@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:handy_gadgets_app/main.dart';
+import 'package:handy_gadgets_app/core/routes/route_names.dart';
 
 class NotesButtonWidget extends StatelessWidget {
   const NotesButtonWidget({super.key});
