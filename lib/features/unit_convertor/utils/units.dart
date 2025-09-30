@@ -1,3 +1,5 @@
+typedef UnitList = List<String>;
+
 abstract class UnitsAndFactors {
   Map<String, dynamic> makeUnitsAndFactors();
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'widget_unit_converter_form.dart';
+import 'package:handy_gadgets_app/core/ui/converter_form.dart/screen.dart';
+import 'package:handy_gadgets_app/features/unit_convertor/widget_tab_bar.dart';
+import 'utils/units.dart';
 
 class UnitConverterPage extends StatefulWidget {
   const UnitConverterPage({super.key});
@@ -10,30 +12,37 @@ class UnitConverterPage extends StatefulWidget {
 }
 
 class _UnitConverterPageState extends State<UnitConverterPage> {
-  int activeTabIndex = 0;
+  static const tabNames = ['length', 'time', 'weight'];
 
-  final tabTypes = ['length', 'time', 'weight'];
+  String activeTab = tabNames[0];
+
+  Map<String, dynamic> makeUnitsAndFactors(String type) {
+    late Map<String, dynamic> result;
+
+    if (type == 'length') {
+      result = LengthUnits().makeUnitsAndFactors();
+    } else if (type == 'time') {
+      result = TimeUnits().makeUnitsAndFactors();
+    } else if (type == 'weight') {
+      result = WeightUnits().makeUnitsAndFactors();
+    }
+
+    return {'units': result['units'], 'unitToFactors': result['unitToFactors']};
+  }
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         DefaultTabController(
-          length: tabTypes.length,
+          length: tabNames.length,
           child: Column(
             children: [
-              TabBar(
-                indicatorColor: Colors.blue,
-                labelColor: Colors.blue,
-                unselectedLabelColor: Colors.grey,
-                tabs: [
-                  Tab(text: tabTypes[0].toUpperCase()),
-                  Tab(text: tabTypes[1].toUpperCase()),
-                  Tab(text: tabTypes[2].toUpperCase()),
-                ],
+              TabBarWidget(
+                tabNames: tabNames,
                 onTap: (index) {
                   setState(() {
-                    activeTabIndex = index;
+                    activeTab = tabNames[index];
                   });
                 },
               ),
@@ -42,7 +51,9 @@ class _UnitConverterPageState extends State<UnitConverterPage> {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24),
-          child: UnitConverterForm(type: tabTypes[activeTabIndex]),
+          child: UnitConverterForm(
+            unitsAndFactors: makeUnitsAndFactors(activeTab),
+          ),
         ),
       ],
     );
