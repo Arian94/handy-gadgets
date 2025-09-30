@@ -145,7 +145,7 @@ class _NotesListPageState extends State<NotesListPage> {
                       decoration: ShapeDecoration(
                         color: _itemIndexAndKeysToDelete[item.key] == null
                             ? null
-                            : Colors.red,
+                            : Colors.orange,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16),
                         ),

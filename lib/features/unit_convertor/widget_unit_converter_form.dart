@@ -59,12 +59,12 @@ class _UnitConverterFormState extends State<UnitConverterForm> {
     return {'units': result['units'], 'unitToFactors': result['unitToFactors']};
   }
 
-  double convertUnit(double value, String from, String to) {
+  String convertUnit(double value, String from, String to) {
     if (!unitToFactors.containsKey(from) || !unitToFactors.containsKey(to)) {
-      return value;
+      return value.toStringAsFixed(3);
     }
     double valueInBase = value * unitToFactors[from]!;
-    return valueInBase / unitToFactors[to]!;
+    return (valueInBase / unitToFactors[to]!).toStringAsFixed(3);
   }
 
   void updateToValue() {
