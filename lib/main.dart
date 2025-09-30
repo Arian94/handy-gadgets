@@ -4,11 +4,12 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 
 import 'core/routes/route_names.dart';
-import 'features/notes/editor/page.dart';
-import 'features/notes/list/page.dart';
-import 'features/currency_converter/page.dart';
-import 'features/unit_convertor/page.dart';
-import 'features/home/page.dart';
+
+import 'features/notes/editor/_page.dart';
+import 'features/notes/list/_page.dart';
+import 'features/currency_converter/_page.dart';
+import 'features/unit_convertor/_page.dart';
+import 'features/home/_page.dart';
 
 import 'collections/note.dart';
 
