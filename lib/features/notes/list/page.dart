@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:handy_gadgets_app/collections/note.dart';
+import 'package:handy_gadgets_app/core/routes/route_names.dart';
 import 'package:intl/intl.dart';
 import 'package:hive_flutter/adapters.dart';
-
-import 'package:handy_gadgets_app/collections/note.dart';
-import 'package:handy_gadgets_app/main.dart';
 
 class NotesListPage extends StatefulWidget {
   const NotesListPage({super.key});
