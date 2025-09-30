@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
                   const Text("Unit Converter"),
                   SizedBox(height: 8),
                   SvgPicture.asset(
-                    'assets/icons/unit-converter.svg',
+                    'assets/icons/unit_converter.svg',
                     height: 36,
                   ),
                 ],
@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SvgPicture.asset('assets/icons/currency-converter.svg'),
+                SvgPicture.asset('assets/icons/currency_converter.svg'),
                 Text("Currency Converter", style: TextStyle(fontSize: 10)),
               ],
             ),
