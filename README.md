@@ -13,7 +13,7 @@ This is where most units are gathered to convert any length, time, etc. units to
 ![Unit Converter](/docs/unit_converter.png)
 
 ## Currency Converter
-Same as the Unit Converter but with a difference where the units fetched from [Frankfuter API](https://frankfurter.dev/) asynchronously:
+Same as the Unit Converter but with a difference where the units fetched from [Frankfurter API](https://frankfurter.dev/) asynchronously:
 
 ![Currency Converter](/docs/currency_converter.png)
 
